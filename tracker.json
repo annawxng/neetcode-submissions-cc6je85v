@@ -1,5 +1,5 @@
 {
- "generated": "2026-06-15",
+ "generated": "2026-06-16",
  "problems": [
   {
    "slug": "anagram-groups",
@@ -30,6 +30,12 @@
    "attempts": 1,
    "firstDate": "2026-05-29",
    "lastDate": "2026-05-29"
+  },
+  {
+   "slug": "build_tracker",
+   "attempts": 1,
+   "firstDate": "2026-06-15",
+   "lastDate": "2026-06-15"
   },
   {
    "slug": "buy-and-sell-crypto",
