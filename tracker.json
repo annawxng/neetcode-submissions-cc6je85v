@@ -1,0 +1,377 @@
+{
+ "generated": "2026-06-15",
+ "problems": [
+  {
+   "slug": "anagram-groups",
+   "attempts": 3,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-06-01"
+  },
+  {
+   "slug": "balanced-binary-tree",
+   "attempts": 5,
+   "firstDate": "2026-05-28",
+   "lastDate": "2026-05-28"
+  },
+  {
+   "slug": "binary-search",
+   "attempts": 1,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "binary-tree-diameter",
+   "attempts": 4,
+   "firstDate": "2026-05-27",
+   "lastDate": "2026-05-28"
+  },
+  {
+   "slug": "binary-tree-right-side-view",
+   "attempts": 1,
+   "firstDate": "2026-05-29",
+   "lastDate": "2026-05-29"
+  },
+  {
+   "slug": "buy-and-sell-crypto",
+   "attempts": 1,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "candy-crush",
+   "attempts": 1,
+   "firstDate": "2026-05-06",
+   "lastDate": "2026-05-06"
+  },
+  {
+   "slug": "car-fleet",
+   "attempts": 1,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "count-number-of-islands",
+   "attempts": 1,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "course-schedule",
+   "attempts": 2,
+   "firstDate": "2026-04-29",
+   "lastDate": "2026-04-29"
+  },
+  {
+   "slug": "course-schedule-ii",
+   "attempts": 1,
+   "firstDate": "2026-04-30",
+   "lastDate": "2026-04-30"
+  },
+  {
+   "slug": "daily-temperatures",
+   "attempts": 1,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "depth-of-binary-tree",
+   "attempts": 1,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "design-hit-counter",
+   "attempts": 3,
+   "firstDate": "2026-05-02",
+   "lastDate": "2026-05-02"
+  },
+  {
+   "slug": "design-search-autocomplete-system",
+   "attempts": 1,
+   "firstDate": "2026-05-03",
+   "lastDate": "2026-05-03"
+  },
+  {
+   "slug": "duplicate-integer",
+   "attempts": 1,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "eating-bananas",
+   "attempts": 2,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "evaluate-reverse-polish-notation",
+   "attempts": 1,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "find-median-in-a-data-stream",
+   "attempts": 1,
+   "firstDate": "2026-05-05",
+   "lastDate": "2026-05-05"
+  },
+  {
+   "slug": "find-minimum-in-rotated-sorted-array",
+   "attempts": 1,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "implement-prefix-tree",
+   "attempts": 1,
+   "firstDate": "2026-05-03",
+   "lastDate": "2026-05-03"
+  },
+  {
+   "slug": "insert-new-interval",
+   "attempts": 1,
+   "firstDate": "2026-05-30",
+   "lastDate": "2026-05-30"
+  },
+  {
+   "slug": "invert-a-binary-tree",
+   "attempts": 1,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "is-anagram",
+   "attempts": 1,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "is-palindrome",
+   "attempts": 2,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "kth-largest-element-in-an-array",
+   "attempts": 1,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "level-order-traversal-of-binary-tree",
+   "attempts": 1,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "linked-list-cycle-detection",
+   "attempts": 1,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "longest-consecutive-sequence",
+   "attempts": 2,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "longest-repeating-substring-with-replacement",
+   "attempts": 1,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "longest-substring-without-duplicates",
+   "attempts": 2,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "lowest-common-ancestor-in-binary-search-tree",
+   "attempts": 3,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "lru-cache",
+   "attempts": 2,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-06-01"
+  },
+  {
+   "slug": "max-water-container",
+   "attempts": 3,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "meeting-schedule-ii",
+   "attempts": 1,
+   "firstDate": "2026-05-31",
+   "lastDate": "2026-05-31"
+  },
+  {
+   "slug": "merge-intervals",
+   "attempts": 1,
+   "firstDate": "2026-05-29",
+   "lastDate": "2026-05-29"
+  },
+  {
+   "slug": "merge-two-sorted-linked-lists",
+   "attempts": 1,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "minimum-stack",
+   "attempts": 1,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "minimum-window-with-characters",
+   "attempts": 1,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "n-queens",
+   "attempts": 1,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "permutation-string",
+   "attempts": 1,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "products-of-array-discluding-self",
+   "attempts": 1,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "remove-node-from-end-of-linked-list",
+   "attempts": 1,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "reorder-linked-list",
+   "attempts": 1,
+   "firstDate": "2026-06-01",
+   "lastDate": "2026-06-01"
+  },
+  {
+   "slug": "reorganize-string",
+   "attempts": 1,
+   "firstDate": "2026-05-01",
+   "lastDate": "2026-05-01"
+  },
+  {
+   "slug": "reverse-a-linked-list",
+   "attempts": 1,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "same-binary-tree",
+   "attempts": 1,
+   "firstDate": "2026-05-26",
+   "lastDate": "2026-05-26"
+  },
+  {
+   "slug": "search-2d-matrix",
+   "attempts": 1,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "sliding-window-maximum",
+   "attempts": 1,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "spiral-matrix",
+   "attempts": 1,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "string-encode-and-decode",
+   "attempts": 1,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "subarray-sum-equals-k",
+   "attempts": 1,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "subtree-of-a-binary-tree",
+   "attempts": 2,
+   "firstDate": "2026-05-27",
+   "lastDate": "2026-05-27"
+  },
+  {
+   "slug": "task-scheduling",
+   "attempts": 1,
+   "firstDate": "2026-05-01",
+   "lastDate": "2026-05-01"
+  },
+  {
+   "slug": "three-integer-sum",
+   "attempts": 1,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "top-k-elements-in-list",
+   "attempts": 3,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-06-15"
+  },
+  {
+   "slug": "trapping-rain-water",
+   "attempts": 2,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "two-integer-sum",
+   "attempts": 8,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-06-01"
+  },
+  {
+   "slug": "two-integer-sum-ii",
+   "attempts": 4,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "valid-binary-search-tree",
+   "attempts": 1,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "valid-sudoku",
+   "attempts": 2,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-06-10"
+  },
+  {
+   "slug": "validate-parentheses",
+   "attempts": 1,
+   "firstDate": "2026-04-13",
+   "lastDate": "2026-04-13"
+  }
+ ]
+}

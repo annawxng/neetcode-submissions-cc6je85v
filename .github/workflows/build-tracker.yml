@@ -1,0 +1,28 @@
+name: Build tracker
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate tracker.json
+        run: python3 .github/scripts/build_tracker.py
+
+      - name: Commit manifest if it changed
+        run: |
+          git config user.name  "tracker-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add tracker.json
+          git diff --staged --quiet || git commit -m "chore: update tracker.json [skip ci]"
+          git push
