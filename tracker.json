@@ -56,6 +56,12 @@
    "lastDate": "2026-04-13"
   },
   {
+   "slug": "climbing-stairs",
+   "attempts": 1,
+   "firstDate": "2026-06-16",
+   "lastDate": "2026-06-16"
+  },
+  {
    "slug": "count-number-of-islands",
    "attempts": 1,
    "firstDate": "2026-04-13",
