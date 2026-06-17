@@ -1,5 +1,5 @@
 {
- "generated": "2026-06-16",
+ "generated": "2026-06-17",
  "problems": [
   {
    "slug": "anagram-groups",
@@ -300,6 +300,12 @@
    "attempts": 1,
    "firstDate": "2026-04-13",
    "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "single-number",
+   "attempts": 1,
+   "firstDate": "2026-06-17",
+   "lastDate": "2026-06-17"
   },
   {
    "slug": "sliding-window-maximum",
