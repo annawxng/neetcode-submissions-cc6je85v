@@ -1,5 +1,5 @@
 {
- "generated": "2026-06-17",
+ "generated": "2026-06-22",
  "problems": [
   {
    "slug": "anagram-groups",
@@ -216,6 +216,12 @@
    "attempts": 3,
    "firstDate": "2026-04-13",
    "lastDate": "2026-04-13"
+  },
+  {
+   "slug": "maximum-subarray",
+   "attempts": 1,
+   "firstDate": "2026-06-22",
+   "lastDate": "2026-06-22"
   },
   {
    "slug": "meeting-schedule-ii",
