@@ -272,6 +272,12 @@
    "lastDate": "2026-04-13"
   },
   {
+   "slug": "non-cyclical-number",
+   "attempts": 1,
+   "firstDate": "2026-06-22",
+   "lastDate": "2026-06-22"
+  },
+  {
    "slug": "permutation-string",
    "attempts": 1,
    "firstDate": "2026-04-13",
