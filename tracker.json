@@ -207,9 +207,9 @@
   },
   {
    "slug": "lowest-common-ancestor-in-binary-search-tree",
-   "attempts": 3,
+   "attempts": 4,
    "firstDate": "2026-04-13",
-   "lastDate": "2026-04-13"
+   "lastDate": "2026-06-22"
   },
   {
    "slug": "lru-cache",
