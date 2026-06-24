@@ -1,5 +1,5 @@
 {
- "generated": "2026-06-23",
+ "generated": "2026-06-24",
  "problems": [
   {
    "slug": "anagram-groups",
@@ -276,6 +276,12 @@
    "attempts": 1,
    "firstDate": "2026-06-22",
    "lastDate": "2026-06-22"
+  },
+  {
+   "slug": "number-of-one-bits",
+   "attempts": 1,
+   "firstDate": "2026-06-24",
+   "lastDate": "2026-06-24"
   },
   {
    "slug": "permutation-string",
