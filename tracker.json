@@ -1,5 +1,5 @@
 {
- "generated": "2026-06-24",
+ "generated": "2026-06-25",
  "problems": [
   {
    "slug": "anagram-groups",
@@ -57,9 +57,9 @@
   },
   {
    "slug": "climbing-stairs",
-   "attempts": 1,
+   "attempts": 2,
    "firstDate": "2026-06-16",
-   "lastDate": "2026-06-16"
+   "lastDate": "2026-06-25"
   },
   {
    "slug": "count-number-of-islands",
