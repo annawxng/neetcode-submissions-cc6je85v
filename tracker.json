@@ -1,5 +1,5 @@
 {
- "generated": "2026-06-25",
+ "generated": "2026-07-01",
  "problems": [
   {
    "slug": "anagram-groups",
@@ -219,9 +219,9 @@
   },
   {
    "slug": "max-water-container",
-   "attempts": 3,
+   "attempts": 4,
    "firstDate": "2026-04-13",
-   "lastDate": "2026-04-13"
+   "lastDate": "2026-07-01"
   },
   {
    "slug": "maximum-subarray",
