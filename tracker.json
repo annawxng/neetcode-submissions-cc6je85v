@@ -278,6 +278,12 @@
    "lastDate": "2026-06-22"
   },
   {
+   "slug": "notion_reattempts",
+   "attempts": 1,
+   "firstDate": "2026-07-03",
+   "lastDate": "2026-07-03"
+  },
+  {
    "slug": "number-of-one-bits",
    "attempts": 1,
    "firstDate": "2026-06-24",
