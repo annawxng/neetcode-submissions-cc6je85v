@@ -1,4 +1,4 @@
-import os, json, time, datetime, urllib.request, urllib.error
+import os, json, time, datetime, subprocess, urllib.request, urllib.error
 TOKEN = os.environ["NOTION_TOKEN"]
 SH_DB = "c807e5936ab08351a00681aca68fd731"
 HDR = {"Authorization":"Bearer "+TOKEN,"Notion-Version":"2022-06-28","Content-Type":"application/json"}
@@ -33,16 +33,37 @@ def slug_from(url):
     u = url.split("?")[0].rstrip("/")
     return u.split("/problems/")[-1] if "/problems/" in u else None
 
-# 1. count submission files per problem folder
-counts = {}
+def git_dates(relpath):
+    try:
+        log = subprocess.check_output(["git","-C",REPO,"log","--reverse","--format=%cs","--",relpath], text=True).split()
+        return (log[0], log[-1]) if log else (None, None)
+    except Exception:
+        return (None, None)
+
+# ── one-time: rename "date solved" -> "last practiced", add "first solved" ──
+schema = api("GET", f"/databases/{SH_DB}")
+props = (schema or {}).get("properties", {})
+changes = {}
+if "date solved" in props and "last practiced" not in props:
+    changes["date solved"] = {"name": "last practiced"}
+if "first solved" not in props:
+    changes["first solved"] = {"date": {}}
+if changes:
+    api("PATCH", f"/databases/{SH_DB}", {"properties": changes})
+    print("Schema updated:", list(changes))
+
+# ── count submissions + first/last commit date per problem folder ──
+info = {}
 for root, dirs, files in os.walk(REPO):
     if "/.git" in root: continue
     subs = [f for f in files if f.startswith("submission") and f.endswith(".py")]
-    if subs:
-        counts[os.path.basename(root)] = counts.get(os.path.basename(root), 0) + len(subs)
-print(f"Repo: {len(counts)} problems with submissions")
+    if not subs: continue
+    base = os.path.basename(root)
+    first, last = git_dates(os.path.relpath(root, REPO))
+    info[base] = {"count": len(subs), "first": first, "last": last}
+print(f"Repo: {len(info)} problems")
 
-# 2. map Notion pages by slug (neetcode link and/or leetcode q link)
+# ── map Notion pages by slug ──
 by_slug = {}
 for p in query(SH_DB):
     pr = p["properties"]
@@ -51,17 +72,18 @@ for p in query(SH_DB):
               slug_from((pr.get("q link", {}) or {}).get("url"))):
         if s: by_slug[s] = (p["id"], num)
 
-# 3. update counts, comment when it went up
-updated = commented = 0
-for slug, count in counts.items():
+# ── update counts + dates, comment on a reattempt ──
+upd = com = 0
+for slug, d in info.items():
     if slug not in by_slug: continue
     pid, cur = by_slug[slug]
-    if count == cur: continue
-    api("PATCH", f"/pages/{pid}", {"properties":{"num times solved":{"number":count}}})
-    updated += 1
-    if count > cur:
-        api("POST", "/comments", {"parent":{"page_id":pid},
-            "rich_text":[{"type":"text","text":{"content":f"🔁 Reattempt logged — submission {count} ({TODAY})"}}]})
-        commented += 1
+    props = {"num times solved": {"number": d["count"]}}
+    if d["last"]:  props["last practiced"] = {"date": {"start": d["last"]}}
+    if d["first"]: props["first solved"]   = {"date": {"start": d["first"]}}
+    api("PATCH", f"/pages/{pid}", {"properties": props}); upd += 1
+    if d["count"] > cur:
+        api("POST", "/comments", {"parent": {"page_id": pid},
+            "rich_text": [{"type":"text","text":{"content":f"🔁 Reattempt logged — submission {d['count']} ({TODAY})"}}]})
+        com += 1
     time.sleep(0.34)
-print(f"Updated {updated} counts, added {commented} reattempt comments.")
+print(f"Updated {upd} entries, {com} reattempt comments.")
