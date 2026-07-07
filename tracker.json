@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-03",
+ "generated": "2026-07-07",
  "problems": [
   {
    "slug": "anagram-groups",
@@ -288,6 +288,12 @@
    "attempts": 1,
    "firstDate": "2026-06-24",
    "lastDate": "2026-06-24"
+  },
+  {
+   "slug": "parallel-courses",
+   "attempts": 1,
+   "firstDate": "2026-07-07",
+   "lastDate": "2026-07-07"
   },
   {
    "slug": "permutation-string",
